@@ -43,14 +43,7 @@ if (isset($_POST['contact'])) {
         $subject = "Thank you for reaching out | Library Management System";
         $body = "Hi " . $name . ",
 
-Thank you for reaching out to us. We have received your query Related to Library.
-We will process your query and will get back to you soon.
-        
-You can also reach out to us or share your queries  directly to admin of website at librarymanagementwebsite@gmail.com.
-        
-Explore our Books on our website: Library Management System
-        
-Regards,
+
 Admin Of Library Management System";
         $sender = "From: librarymanagementwebsite@gmail.com";
         if (mail($reciever_email, $subject, $body, $sender)) {
@@ -70,17 +63,17 @@ Admin Of Library Management System";
             </div>
           </div>
         </div>';
-?>
-          <script>
-            document.getElementById("popup").style.display = "flex";
-            let btn = document.getElementById("close-btn");
+          ?>
+            <script>
+              document.getElementById("popup").style.display = "flex";
+              let btn = document.getElementById("close-btn");
 
 
-            btn.addEventListener("click", () => {
-              document.getElementById("popup").style.display = "none";
-            })
-          </script>
-<?php
+              btn.addEventListener("click", () => {
+                document.getElementById("popup").style.display = "none";
+              })
+            </script>
+          <?php
         } else {
           echo "error while contacting us";
         }
@@ -101,7 +94,8 @@ Admin Of Library Management System";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Library Management System(L.M.S) is simple Library system that is used by librarian for manageing records of books and perform some operations on it.">
+  <meta name="description"
+    content="Library Management System(L.M.S) is simple Library system that is used by librarian for manageing records of books and perform some operations on it.">
   <meta name="keywords" content="LMS,lms,library management system,library software,library management" />
   <title>Library Management System || Make Easy to Manage Records of Books</title>
   <link rel="stylesheet" href="assets/css/index.css">
@@ -109,7 +103,8 @@ Admin Of Library Management System";
   <!--- google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <!-- Fontawesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
@@ -141,23 +136,23 @@ Admin Of Library Management System";
         <div class="login">
           <?php
           if (isset($_SESSION['loggedin'])) {
-          ?>
+            ?>
             <a href="assets/webpages/signup.php" type="button" class="loginbtn">Daftar</a>
-          <?php
+            <?php
           } else if (isset($_SESSION['stdloggedin'])) {
-          ?>
-            <a href="assets/webpages/signup.php">Daftar</a>
+            ?>
+              <a href="assets/webpages/signup.php">Daftar</a>
 
-          <?php
+            <?php
           } else {
-          ?>
-            <a href="assets/webpages/login.php" type="button" class="loginbtn">Daftar</a>
-          <?php
+            ?>
+              <a href="assets/webpages/login.php" type="button" class="loginbtn">Daftar</a>
+            <?php
           }
           ?>
         </div>
       </ul>
-      <div class="hamburger">
+      <div class="stack">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -169,24 +164,25 @@ Admin Of Library Management System";
     <div class="right" class="responsive">
       <h4>Selamat Datang</h4>
       <h4>di <span>Ruang Baca</span>!</h4>
-      <p>Ruang Baca hadir untuk membuka gerbang dunia penuh pengetahuan dan imajinasi. Jelajahi ribuan buku digital dengan mudah, kapanpun, dan dimanapun Anda berada. </p>
+      <p>Ruang Baca hadir untuk membuka gerbang dunia penuh pengetahuan dan imajinasi. Jelajahi ribuan buku digital
+        dengan mudah, kapanpun, dan dimanapun Anda berada. </p>
       <section class="home">
         <div class="btns">
           <?php
           if (isset($_SESSION['loggedin'])) {
-          ?>
+            ?>
             <button><a href="assets/webpages/login.php.php">Mulai</a></button>
-          <?php
+            <?php
           } else if (isset($_SESSION['stdloggedin'])) {
-          ?>
-            <button><a href="assets/webpages/login.php">Mulai</a></button>
+            ?>
+              <button><a href="assets/webpages/login.php">Mulai</a></button>
 
-          <?php
+            <?php
           } else {
-          ?>
-            <button><a href="assets/webpages/login.php">Mulai</a></button>
+            ?>
+              <button><a href="assets/webpages/login.php">Mulai</a></button>
 
-          <?php
+            <?php
           }
           ?>
         </div>
@@ -205,7 +201,7 @@ Admin Of Library Management System";
       <?php
       if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-      ?>
+          ?>
           <div class="book">
             <div class="img">
               <img src="assets/panel/img-store/book-images/<?php echo $row['cover'] ?>" alt="Book Cover Image">
@@ -224,7 +220,7 @@ Admin Of Library Management System";
               </div>
             </div>
           </div>
-      <?php
+          <?php
         }
       }
       ?>
@@ -240,7 +236,9 @@ Admin Of Library Management System";
       <div class="about-content">
         <h4>Ruang Diskusi</h4>
         <h1>Ruang Baca bukan cuma perpustakaan digital, tapi juga tempat ngobrol seru tentang buku! </h1>
-        <p>Di Ruang Diskusi, Anda bisa ngobrolin buku favorit, dapatkan rekomendasi baru, ikutan diskusi seru, kenalan dengan sesama pembaca, dan masih banyak lagi. Yuk, gabung dan rasakan keseruan ngobrol buku bareng di Ruang Baca!</p>
+        <p>Di Ruang Diskusi, Anda bisa ngobrolin buku favorit, dapatkan rekomendasi baru, ikutan diskusi seru, kenalan
+          dengan sesama pembaca, dan masih banyak lagi. Yuk, gabung dan rasakan keseruan ngobrol buku bareng di Ruang
+          Baca!</p>
       </div>
     </div>
   </section>
@@ -274,43 +272,43 @@ Admin Of Library Management System";
     </div>
   </section>
 
-<section>
-<div class="titleprem">
+  <section>
+    <div class="titleprem">
       <h4>Jelajahi Premium</h4>
     </div>
-  <div class="flex-container-premium">
-    <div class="boxprem">
-      <div class="text">Coba
-        <div class="price">GRATIS</div>
-        <div class="lamanya">3 hari</div>
-        <div class="benefit">
-          <ul>
-            <li>Coba gratis dengan pengalaman premium
-              <br> yang menyenangkan
-            </li>
-          </ul>
+    <div class="flex-container-premium">
+      <div class="boxprem">
+        <div class="text">Coba
+          <div class="price">GRATIS</div>
+          <div class="lamanya">3 hari</div>
+          <div class="benefit">
+            <ul>
+              <li>Coba gratis dengan pengalaman premium
+                <br> yang menyenangkan
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="boxprem">
-      <div class="text">Premium
-        <div class="price">Rp. 30.000</div>
-        <div class="lamanya">per bulan</div>
-        <div class="benefit">
-          <ul>
-            <li>Koleksi Premium: Jelajahi ribuan ebook premium
-              <br>dari berbagai genre dan penulis ternama yang
-              <br>tidak tersedia di versi gratis.
-            </li>
-            <li>Early Access: Dapatkan akses lebih awal ke
-              <br>buku-buku terbaru sebelum dirilis ke publik.
-            </li>
-          </ul>
+      <div class="boxprem">
+        <div class="text">Premium
+          <div class="price">Rp. 30.000</div>
+          <div class="lamanya">per bulan</div>
+          <div class="benefit">
+            <ul>
+              <li>Koleksi Premium: Jelajahi ribuan ebook premium
+                <br>dari berbagai genre dan penulis ternama yang
+                <br>tidak tersedia di versi gratis.
+              </li>
+              <li>Early Access: Dapatkan akses lebih awal ke
+                <br>buku-buku terbaru sebelum dirilis ke publik.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
 
@@ -324,7 +322,8 @@ Admin Of Library Management System";
         </div>
         <div class="logo-body">
           <p>
-            Ruang Baca hadir untuk membuka gerbang dunia penuh pengetahuan dan imajinasi. Jelajahi ribuan buku digital dengan mudah, kapanpun, dan dimanapun Anda berada. </p>
+            Ruang Baca hadir untuk membuka gerbang dunia penuh pengetahuan dan imajinasi. Jelajahi ribuan buku digital
+            dengan mudah, kapanpun, dan dimanapun Anda berada. </p>
         </div>
 
       </div>
