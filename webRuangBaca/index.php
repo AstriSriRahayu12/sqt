@@ -174,7 +174,7 @@ Admin Of Library Management System";
             ?>
             <button><a href="assets/webpages/login.php.php">Mulai</a></button>
             <?php
-          } else if (isset($_SESSION['stdloggedin'])) {
+           else if (isset($_SESSION['stdloggedin'])) {
             ?>
               <button><a href="assets/webpages/login.php">Mulai</a></button>
 
