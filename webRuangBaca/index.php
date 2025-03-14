@@ -152,7 +152,7 @@ Admin Of Library Management System";
           ?>
         </div>
       </ul>
-      <div class="hamburger">
+      <div class="stack">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
