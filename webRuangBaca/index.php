@@ -162,7 +162,7 @@ Admin Of Library Management System";
 
   <div class="twoColumns">
     <div class="right" class="responsive">
-      <h4>Selamat Datang</h4>
+      <h4>Selamat Datang Di Web Ruang Baca</h4>
       <h4>di <span>Ruang Baca</span>!</h4>
       <p>Ruang Baca hadir untuk membuka gerbang dunia penuh pengetahuan dan imajinasi. Jelajahi ribuan buku digital
         dengan mudah, kapanpun, dan dimanapun Anda berada. </p>
