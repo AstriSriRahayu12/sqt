@@ -246,7 +246,7 @@ Admin Of Library Management System";
   </section>
 
 
-  <section class="premium">
+  <section class="minus">
     <div class="title-premium">
       <h4>Media Partner Ruang Baca</h4>
     </div>
