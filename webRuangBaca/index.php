@@ -116,7 +116,7 @@ Admin Of Library Management System";
     <nav class="navbar">
       <div class="logo">
         <div class="icon">
-          <!-- <i class='bx bx-book-reader'></i> -->
+          <!-- <i aduh'></i> -->
           <img src="assets/images/logo.svg" alt="Library Management System Logo">
         </div>
       </div>
@@ -174,7 +174,7 @@ Admin Of Library Management System";
             ?>
             <button><a href="assets/webpages/login.php.php">Mulai</a></button>
             <?php
-           else if (isset($_SESSION['stdloggedin'])) {
+          }else if (isset($_SESSION['stdloggedin'])) {
             ?>
               <button><a href="assets/webpages/login.php">Mulai</a></button>
 
